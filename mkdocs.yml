@@ -1,0 +1,65 @@
+site_name: Developer Portal Kwaza ICT
+site_url: https://dev-portal.kwaza.co
+site_description: Developer portal for Kwaza ICT
+
+theme:
+    name: material
+    palette:
+    - scheme: slate # Palette toggle for dark mode
+      primary: yellow
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+    - scheme: default # Palette toggle for light mode
+      primary: yellow
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    features:
+    - content.code.copy
+    - navigation.top
+    - navigation.instant
+
+nav:
+    - Home: 'index.md'
+    - GitLab:
+        - 'Upgrade':
+            - 'Minor version':          'gitlab/upgrade-minor-version.md'
+            - 'Upgrade 13 to 14':       'gitlab/13-to-14.md'
+            - 'Upgrade 14 to 15':       'gitlab/14-to-15.md'
+            - 'DB migration':           'gitlab/db-migration.md'
+
+# -------------------------------------------------------------------
+# Extensions: https://squidfunk.github.io/mkdocs-material/setup/extensions/
+# -------------------------------------------------------------------
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  # Allow fences in fences and custom fences like mermaid diagrams
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.details
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+
+# -------------------------------------------------------------------
+# Plugins: https://www.mkdocs.org/dev-guide/plugins/
+# -------------------------------------------------------------------
+plugins:
+  - search
+  - mermaid2
+  - drawio_file
