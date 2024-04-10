@@ -2,7 +2,7 @@
 
 ## Website
 
-View these docs at: [https://dev-portal.kwaza.co](https://dev-portal.kwaza.co)
+View these docs at: [https://devops-portal.kwaza.co](https://devops-portal.kwaza.co)
 
 ## Site Generator
 
