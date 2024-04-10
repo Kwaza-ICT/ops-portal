@@ -2,4 +2,4 @@
 
 ## Welcome
 
-Welcome to the documentation home page of Kwaza ICT
+Welcome to the documentation home page of Kwaza ICT.
