@@ -1,5 +1,7 @@
 # Developer Portal - Kwaza ICT
 
+[![Lint Markdown Docs](https://github.com/Kwaza-ICT/ops-portal/actions/workflows/linter.yml/badge.svg)](https://github.com/Kwaza-ICT/ops-portal/actions/workflows/linter.yml)
+
 ## Website
 
 View these docs at: [https://devops-portal.kwaza.co](https://devops-portal.kwaza.co)
