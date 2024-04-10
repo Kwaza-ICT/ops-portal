@@ -6,7 +6,7 @@ theme:
     name: material
     palette:
     - scheme: slate # Palette toggle for dark mode
-      primary: yellow
+      primary: purple
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
