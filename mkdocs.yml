@@ -28,6 +28,9 @@ nav:
             - 'Upgrade 13 to 14':       'gitlab/13-to-14.md'
             - 'Upgrade 14 to 15':       'gitlab/14-to-15.md'
             - 'DB migration':           'gitlab/db-migration.md'
+    - Ubuntu:
+        - 'APT':
+            - 'Commands': 'ubuntu.md'
 
 # -------------------------------------------------------------------
 # Extensions: https://squidfunk.github.io/mkdocs-material/setup/extensions/
