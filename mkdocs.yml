@@ -11,7 +11,7 @@ theme:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
     - scheme: default # Palette toggle for light mode
-      primary: yellow
+      primary: brown
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
