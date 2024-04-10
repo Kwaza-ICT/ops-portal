@@ -1,0 +1,51 @@
+---
+#############################
+## MkDocs GitHub Action    ##
+#############################
+
+name: Publish Docs to GitHub Pages
+
+# Documentation: https://help.github.com/en/articles/workflow-syntax-for-github-actions
+
+#----------------------------
+# Job Trigger
+#----------------------------
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+#----------------------------
+# Jobs
+#----------------------------
+jobs:
+  build:
+    name: MkDocs Deploy to GitHub
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - uses: actions/cache@v3
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+
+      - run: pip install mkdocs
+
+      - run: pip install mkdocs-material
+
+      - run: pip install pymdown-extensions
+
+      - run: pip install mkdocs-mermaid2-plugin # https://github.com/fralau/mkdocs-mermaid2-plugin
+
+      - run: pip install mkdocs-drawio-file
+
+      - run: mkdocs gh-deploy --force

@@ -1,0 +1,43 @@
+---
+###########################
+###########################
+## Linter GitHub Actions ##
+###########################
+###########################
+name: Lint Markdown Docs
+
+#
+# Documentation:
+# https://help.github.com/en/articles/workflow-syntax-for-github-actions
+#
+
+#############################
+# Start the job on all push #
+#############################
+on:
+  push:
+
+###############
+# Set the Job #
+###############
+jobs:
+  build:
+
+    name: Lint Docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Lint Code Base
+        uses: github/super-linter@v4.8.5
+        env:
+          DEFAULT_BRANCH: master
+          VALIDATE_ALL_CODEBASE: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_BASH: true
+          VALIDATE_MARKDOWN: true
+          VALIDATE_XML: true
+          VALIDATE_YAML: true
+          FILTER_REGEX_EXCLUDE: 'CHANGELOG.md|.*tf|.*tpl|test*|.*src/test.*'
+...
