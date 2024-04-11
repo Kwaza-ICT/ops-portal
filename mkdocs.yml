@@ -27,6 +27,7 @@ nav:
             - 'Minor version':          'gitlab/upgrade-minor-version.md'
             - 'Upgrade 13 to 14':       'gitlab/13-to-14.md'
             - 'Upgrade 14 to 15':       'gitlab/14-to-15.md'
+            - 'Upgrade 15 to 16':       'gitlab/15-to-16.md'
             - 'DB migration':           'gitlab/db-migration.md'
     - Ubuntu:
         - 'APT':
