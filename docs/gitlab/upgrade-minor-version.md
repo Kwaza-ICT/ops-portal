@@ -1,6 +1,6 @@
-## How to do a minor upgrade
+# How to do a minor upgrade
 
-### How to add Gitlab repository into ubuntu
+## How to add Gitlab repository into ubuntu
 
 ```shell
 curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash

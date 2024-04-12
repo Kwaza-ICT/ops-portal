@@ -1,4 +1,4 @@
-## How to remove offline runners from a runner group
+# How to remove offline runners from a runner group
 
 ```shell
 #!/usr/bin/env bash
