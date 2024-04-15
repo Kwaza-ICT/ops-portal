@@ -22,6 +22,9 @@ theme:
 
 nav:
     - Home: 'index.md'
+    - GitHub:
+        - 'GitHub API': 'github/api/index.md'
+        - 'Runners':    'github/runners/bash.md'
     - GitLab:
         - 'Upgrade':
             - 'Minor version':          'gitlab/upgrade-minor-version.md'
