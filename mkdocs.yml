@@ -36,7 +36,7 @@ nav:
         - 'APT':
             - 'Commands': 'ubuntu.md'
     - Kubernetes:
-        - 'Pods': 'pods.md'
+        - 'Pods': 'k8s/pods.md'
 
 # -------------------------------------------------------------------
 # Extensions: https://squidfunk.github.io/mkdocs-material/setup/extensions/
