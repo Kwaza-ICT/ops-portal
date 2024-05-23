@@ -37,6 +37,7 @@ nav:
             - 'Commands': 'ubuntu.md'
     - Kubernetes:
         - 'Pods': 'k8s/pods.md'
+        - 'Force Pod termination': 'k8s/delete-stuck-pod.md'
 
 # -------------------------------------------------------------------
 # Extensions: https://squidfunk.github.io/mkdocs-material/setup/extensions/
