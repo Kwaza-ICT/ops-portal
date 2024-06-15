@@ -40,6 +40,8 @@ nav:
         - 'Force Pod termination': 'k8s/delete-stuck-pod.md'
     - RedHat:
         - 'subscription': 'redhat/subscription.md'
+    - Zsh:
+        - 'alias': 'zsh/alias.md'
 
 # -------------------------------------------------------------------
 # Extensions: https://squidfunk.github.io/mkdocs-material/setup/extensions/
